@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-StupeApp::Application.load_tasks
+Rwilson::Application.load_tasks

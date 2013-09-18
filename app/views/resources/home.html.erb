@@ -1,2 +1,382 @@
-<h1>Hello World</h1>
-<p>Find me in app/views/resources/home.html.erb</p>
+<style type="text/css">
+	.menu{
+		color: white;
+		background-color: black;
+		margin-top: 0px;
+		display:inline;
+		padding: 10px;
+		font-weight: bold;
+		font-size: 16px;
+		
+	}
+	.menu:hover{
+		cursor: pointer;
+		color:blue;
+	}
+
+	.format{
+		display:none;
+	}
+
+	.menubar{
+		width: 100%;
+		background-color: black;
+		margin-top: 0px;
+		display: inline;
+		padding: 15px;
+		margin-bottom: 60px;
+	}
+
+	.container{
+		width: 66%;
+		padding: 10px;
+	}
+
+	.image{
+		max-width: 20%;
+		max-height: 30%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h1{
+    color:#29378c !important;
+    font-size:30px;
+    font-weight:bold;
+    line-height: 34px;
+    margin-top: -85px;
+    margin-bottom: 85px;
+}
+
+h2{
+    color:#d1572c !important;
+    font-size:24px;
+    font-weight:bold;
+    line-height: 28px;
+}
+
+h3{
+    color:#79AF00 !important;
+    font-size:18px;
+    font-weight:bold;
+    line-height: 0px;
+}
+
+h4{
+    color:#29378c !important;
+    font-size:24px;
+    font-weight:bold;
+    line-height: 28px;
+}
+
+p{
+    color: #3d3d3d !important;
+    font-weight:normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+</style>
+
+<script type="text/javascript">
+	function toggle(id){
+		$('#intro').slideUp();
+		$('#employer').slideUp();
+		$('#goals').slideUp();
+		$('#techs').slideUp();
+		$('#jd').slideUp();
+		$('#conclusion').slideUp();
+		$('#acknowledgements').slideUp();
+		$('#tips').slideUp();
+
+		if(document.getElementById(id).style.display == "none"){
+			$('#'+ id).slideDown();
+		}
+	};
+
+	 $(document).ready(function () {
+	 	$('#intro').slideDown();
+	 });
+</script>
+
+ <div class="image"> <img style="margin-top:-30px; width:90%" src="http://www.uoguelph.ca/info/graphicstandards/files/UofGidentifier.jpg" alt="University of Guelph"> </img></div>
+
+
+ <!-- <div class="image"> <img style="margin-top:-50px" src="images/uog.jpg" alt="University of Guelph"> </img></div> -->
+
+<center>
+<div class="menubar" style="display:inline">
+<div class="menu" onclick="toggle('intro')">Intro</div>
+<div class="menu" onclick="toggle('employer')">Employer</div>
+<div class="menu" onclick="toggle('goals')">Goals</div>
+<div class="menu" onclick="toggle('techs')">Technology</div>
+<div class="menu" onclick="toggle('jd')">Job Description</div>
+<div class="menu" onclick="toggle('conclusion')">Conclusion</div>
+<div class="menu" onclick="toggle('acknowledgements')">Acknowledgements</div>
+<div class="menu" onclick="toggle('tips')">Tips</div>
+</div>
+</center>
+
+<center>
+<h1>Raaid Wilson Co-op Report</h1>
+</center>
+
+
+<div id="intro" class="container" style="display:none;">
+	<h2>Welcome</h2>
+
+	<p>Hello World,<br />
+	Welcome to my first website.  As a result of my co-op work term at Giftopia Inc.  I was able to create my own Heroku application using Ruby on Rails.  This website is a small portion of the vast knowledge gained at Giftopia.  Please use the menu bar, to navigate the website and find out more about my sumer 2013 work term. </p>
+
+	<p>This website is about my summer 2013 work experience with Ruby on Rails; It is a web developing language to create a website which was then deployed through a tool called Heroku; much like this website itself. I will discuss some of the skills I learned as well as some goals I worked towards; the technologies I worked with and some outstanding aspects of the project.  This site will include some tips and techniques on how to develop successful applications, as well as the cluster of languages and tools associated with rails; some shortcuts to more productive coding sessions, resources available at your disposal for you to create a successful website and some common simple errors I encountered and their solutions that could potentially save you quite a bit of time through trouble shooting.</p>
+
+
+	</p>
+</div>
+
+
+<div id="employer" class="container" style="display:none">
+	
+	<h2>Employer</h2>
+
+	<img style="width:26%; float:right; height:120px" src="http://www.techvibes.com/public/cache/company/220x145/14093_giftopia_inc_255255255.jpg"></img>
+
+	<img style="width:26%; float:right; height:120px; margin-right:-250px; margin-top:120px; margin-bottom:20px" src="http://www.eventastic.com/img/eventastic_mobile.png"></img>
+
+	<img style="width:26%; float:right; height:160px; margin-right:-250px; margin-top:218px" src="https://lh3.ggpht.com/YEfWGuslxVoduDLBpQWek0H73nA_3aZ_BQu6ls7wTrPRvmbxDghLPU99i3LFKIIm-sc=w300"></img>
+
+	<div style="display:inline-block; width:100%;">
+	<div style="width:66%; margin-top:-376px">
+	<p>I worked for a small start-up company called Giftopia Inc.  Giftopia is a social gifting application available on your computer, iPhone or Android-powered Smartphone. Giftopia is a free personal gift registry that makes gift giving and receiving both fast and easy for Birthdays, Anniversaries, Weddings or any occasion! They have several platforms and projects under their name; including theweddingregistry.me, the one I worked on was Eventastic.com.  Eventastic is an event ticketing, management and promotion platform for event planners and part of Giftopia Inc. All of these rich features are conceptualized, built and maintained by our team in Waterloo Ontario.</p>
+	<br />
+	
+
+	<p>The area of computing science this is related to is Web Development.  My CTO's name was Adam Morrison.  He recently got married.  He himself is a University of Guelph graduate in Systems of Engineering.  He used to skate at an Olympic level.  The founder of Giftopia, Randy Bird, is a serial entrepreneur with over thirty years of experience running his own businesses. He was inspired to create Giftopia because he was having a hard time finding the right gifts for family and friends, and wanted to make the entire gift shopping experience easier.  </p>
+	</div>
+
+
+	</div>
+	
+	
+	
+</div>
+
+
+<div id="goals" class="container" style="display:none">
+
+<h2>Goals</h2>
+
+<p>As a programmer with very little work experience, I had plenty to learn, goals to accomplish and this was the perfect platform for me to do so.  The following paragraphs will discuss my initial goals, the one I developed relating to my job tasks, and skills I wanted to learn.  I had many tasks assigned to me, but I will overview the major ones and group them together to keep the information brief.</p>
+
+<p>I wanted to learn how to produce, develop and deploy my own website.  Work on making static and function HTML pages as well as learn database management.  Going into this job, I had no experience or any idea as to how I would go about doing that.  I did not know anything about the technologies or methods related to making a web page.  All my goals were associated to the tasks assigned to me, and skills I wanted to learn were needed to fulfill those tasks.  Along the way I will discuss some of the problems I encountered as well as some tips I can provide looking back at my personal experience.</p>  
+<br />
+
+<div style="border-style:solid; border-width:3px; padding: 10px">
+<h3>Job Task:</h3>
+  <p>Firstly I had to set up the coding environment in which to develop the website.  This involved installing and setting up Github, RVM, Heroku, Ruby on Rails and postgresql.</p><br />
+
+<h3>Goal:</h3>  
+<p>The goal was to efficiently get set up and introduce myself to the workplace environment and brief myself on the previous code.  I had to quickly get through Michael Hartl’s tutorial and use the database.yml file provide by my CTO to have the databases be created and store information correctly.  I achieved this goal, and then worked on the website code, but it could’ve been done a lot more efficiently.</p><br />
+
+<h3>Skill Associated:</h3>
+<p>Time Management Skills.  Quickly adapting to new technology.</p>
+</div>
+<br />
+
+<div style="border-style:solid; border-width:3px; padding: 10px">
+<h3>Job Task:</h3>
+<p> Research various project management tools for everyone in the company to use.  Pick the best one, implement it and deploy it.  Prepare a document giving a brief explanation as to how to use the platform.  This tool would be used to report assign and keep track of conflicts.  This was a solely for me to complete.</p><br />
+<h3>Goal:</h3> 
+<p>
+  There was a project management tool in place before but was disliked and rejected by members of the company.  The web application had to be user friendly, intuitive and compatible with the system.  There were other platforms like Bugzilla, Mantis, and Trac however after a lot of research Redmine was chosen.  It was written in Ruby on rails and was successfully cloned and deployed on glacial-bayou-8601-herokuapp.com.  It is currently being used by Giftipia Inc. as their only project management application.</p><br />
+
+<h3>Skill Associated:</h3>
+<p> Cloning and deploying an open source project.</p>
+</div>
+<br />
+
+<div style="border-style:solid; border-width:3px; padding: 10px">
+<h3>Job Task:</h3>
+<p> Research a tooltip source to display info when the mouse hovers over the information icon.</p><br />
+<h3>Goal:</h3>
+<p>  To successfully implement a tooltip JQuery plug-in API into the website.</p><br />
+<h3>Skill Associated:</h3>
+<p>Implementing a JQuery plugin.</p>
+</div>
+<br />
+
+<div style="border-style:solid; border-width:3px; padding: 10px">
+<h3>Job Task:</h3>
+<p> Replace the current photo showing API used on the event page, as it is too slow, takes a long time to load and does not re-size appropriately.  Instead replace it with the Flex-slider used previously on the Edit page.</p><br />
+<h3>Goal:</h3>
+<p> Be able to take user photos.  Store them correctly.  Then access the right place in Postgres to loop through the photos when on the current web-page.</p><br />
+<h3>Skill Associated:</h3>
+<p> Use the model to correctly store user images.  Learn embedded ruby to look through the images.  Implement the Flexslider tool correctly.</p>
+</div>
+<br />
+
+<div style="border-style:solid; border-width:3px; padding: 10px">
+<h3>Job Task:</h3>
+<p> Resize the main page, add bullets, and other layout of the landing pages and the event page.</p><br />
+<h3>Goal:</h3>
+<p> Learn how to use CSS, and other HTML techniques for the look and feel of the website.</p><br />
+<h3>Skill Associated:</h3>
+<p> Sytling and properly laying out multiple static and non-static web pages</p>
+</div>
+<br />
+
+<div style="border-style:solid; border-width:3px; padding: 10px">
+<h3>Job Task:</h3>
+<p> Have the cash gifting editing section appear on the same page when the edit button is clicked rather than re-directing the user to a new Window.</p><br />
+<h3>Goal:</h3>
+<p> Learn how to use Ajax calls.</p><br />
+<h3>Skill Associated:</h3>
+<p>Correctly utilize the MVC model of application architecture.  </p>
+</div>
+<br />
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="techs" class="container" style="display:none">
+<h2>Technologies Employed</h2>
+<p>This section outlines all the technologies I was exposed to on this term, a brief description and acronym of it, and some of the uses of it, as experienced by me.</p>
+
+<h2>Why</h3>
+<p>I am part of the technological generation, and grew up using the internet.  It is as intuitive to me, as walking, eating, sleeping or any other everyday activity.  I had been doing programming since the 10th grade; learned all these algorithms, looping structures, and other technicalities.  I still had not had any idea how an HTML web page is made and how it is displayed to me at my computer.  It had always fascinated me and an interest that I wanted to pursue.  I had very little knowledge of where to begin or a direction of where to look.  These were the technologies introduced to me, with which I quickly became involved.  They were used by our Chief Technology Officer and a common practice of our work place.  </p><br />
+
+<h3>Ruby on Rails:</h3><p> It is an open source web application framework.</p><br />
+
+<h3>Ruby Version Manager (RVM):</h3><p> RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.  I wanted to work with this manager because I used several different versions of Ruby for different purposes and RVM makes it easy to switch in-between especially if you get conflicting errors.</p><br />
+
+<h3>GIT:</h3><p>  Open source version control system.  This was the version control used by our development team of 6 people.</p><br />
+
+<h3>Github:</h3><p> Collaboration, code review, and code management platform for open source and private projects.</p><br />
+
+<h3>Heroku:</h3><p> This is a cloud application platform used to deploy the website.  It supports several languages including Ruby, Node.js, Clojure, Java, Python, and Scala.  It was mostly used to retrieve the most recent code version of the website.  Being an intern I was never allowed to push directly to the server but rather submit the changes made to the code.  </p><br />
+
+<h3>Model, View, Controller (MVC):</h3><p>  It is a programming concept and design pattern widely adopted for application frameworks; one used for the Eventastic project as well.</p><br />
+
+<h3>Cascading Style Sheets (CSS):</h3><p> Used to control the style and layout of multiple web pages, using classes and ids.  </p><br />
+
+<h3>Asynchronous JavaScript and XML (AJAX):</h3>
+<p> Used to exchange data with the server and updating parts of web page, without reloading the whole page.</p><br />
+
+<h3>Embedded Ruby (ERB):</h3><p> The main programming language used to make Eventastic.</p><br />
+
+<h3>JavaScript (JS):</h3><p> This the scripting language, used by HTML pages for functionality, input validation, communicating with the webserver and other variety of uses.  I used it to collect, store and display user information, particularly for when a user created an event.  </p><br />
+
+<h3>JavaScript Object Notation (JSON):</h3><p> Much like XML, but It is a faster and simpler syntax used for storing and exchanging text information.</p><br />
+
+<h3>JQEURY:</h3><p> It is a Javascript library filled with pre-defined functions which make performing Javascript tasks much easier, and simpler.  It makes the code more readable, maintainable and very intuitive and easy to use.</p><br />
+
+<h3>PostgreSQL:</h3><p>  Is an object relational database management system.  It is used for data creation, migration and manipulation.  This was the platform used to store, organize and handle all the information about Eventastic’s clients, and their associated events and relating details.</p><br />
+
+<h3>Redmine:</h3><p> An open source project management web application.  This was the project I solely worked on and deployed; more information on this in Goals.</p><br />
+
+<h3>Tooltipster:</h3><p> A JQuery plugin used to display information at the very location of where it’s needed.</p><br />
+
+<h3>Flexslider:</h3><p> It is another responsive JQuery slider toolkit.  It was used for the Eventastic’s photo sharing functionality.</p><br />
+
+<h3>Secure Shell (SSH) keys:</h3><p>  It is a cryptographic network protocol for secure data communication between two networks.  It was used to mainly to pull code deployed through heroku on the main server, so I would work with the latest code version.<p><br />
+
+
+</div>
+
+
+
+
+<div id="jd" class="container" style="display:none">
+<h2>Job Description:</h2>
+ <p>Giftopia is a fast paced work environment with an incredible opportunity to jump into a project waste deep and develop real world practical software development skills.  I worked on the development of Eventastic.  I worked with various web technologies like Ruby on Rails, JavaScript and JQuery.  I familiarized myself with concepts and desihn pattersn such as MVC.  </p>
+
+<p>The most unique aspect of my job is that there were only 6 people in the development team, and everyone sat in the same room coding with computers next to each other.  The president of the company worked alongside our table, and I got to know him personally as well.  The most unique aspect would be my colleagues and my CTO.  It has been an absolute pleasure working with my team.  The skills needed for the job was some previous coding experience, self-motivation, and ability to work with minimal supervision.  Most of the technical skills were learnt on the job.  </p>
+</div>
+
+<div id="conclusion" class="container" style="display:none">
+<h2>Conclusion:</h2>
+<p>This has been an extremely fulfilling first Co-op work term.  I had a lot to learn, met some great people and gained real world practical Software Development skills.  I have had the privilege of working with great colleagues in a positive professional environment, under the great leadership of my CTO, Adam Morrison.  I learned the basics of how a website is created and deployed.  Managed a variety of Html pages with embedded ruby, used CSS to control the style and layout of numerous pages, worked with technologies such as AJAX, JSON, JavaScript, JQuery.  I incorporated concepts and design patterns like MVC in the projects assigned to me, learned how to manage a database using Postgresql; collaborated in a real world project using Github and Heroku.  Learned version control through RVM and gained invaluable problem solving skills, only learnt through experience.  I also extensively worked on various research projects, and implemented API’s each with unique aspects.  Lastly my stand alone project of deploying Red-mine is a highlight of my work at Giftopia. </p>
+</div> 
+
+<div id="acknowledgements" class="container" style="display:none">
+<h2>Acknowledgements:</h2>
+<p>  I would like to thank my co-op coordinator Laura Gatto for her continuous support, guidance and encouragement throughout job searching process.  I would like to thank my CTO Adam Morisson for being a great mentor; and for passing on some of his wealth of knowledge and experience; his leadership, patience, and positivity made this term a truly enjoyable one.  And Randall Bird for providing a brilliant platform to work with. </p> 
+
+<p>Laura Gatto, B.A., M.Sc.<br />
+Co-op Co-ordinator (Environmental Sciences, Computer Science & Software Engineering)<br />
+Co-operative Education & Career Services<br />
+Trent Lane<br />
+University of Guelph<br />
+Guelph, ON, N1G 2W1<br />
+519-824-4120 x58243<br />
+Fax:  519-829-3965</p><br />
+
+<p>
+Greg Klotz, Ph.D.<br />
+Bachelor of Computing Program Counsellor<br />
+School of Computer Science<br />
+University of Guelph<br />
+gklotz@uoguelph.ca<br />
+519.824.4120 Extension 52711<br />
+Reynolds 113<br />
+</p><br />
+
+<p>
+Adam Morrison<br />
+Chief Technology Officer<br />
+(519) 998-6505<br />
+adam@giftopia.me<br />
+www.Giftopia.me<br />
+</p><br />
+
+<p>
+Randy  Bird <br />
+President <br />
+Cell: 519-241-8833<br />
+randy@giftopia.me<br />
+</p><br />
+
+<h2>Sources</h2>
+	<p>http://www.uoguelph.ca/info/graphicstandards/files/UofGidentifier.jpg</p>
+	<p>http://www.techvibes.com/public/cache/company/220x145/14093_giftopia_inc_255255255.jpg</p>
+	<p>http://www.eventastic.com/img/eventastic_mobile.png</p>
+	<p>https://lh3.ggpht.com/YEfWGuslxVoduDLBpQWek0H73nA_3aZ_BQu6ls7wTrPRvmbxDghLPU99i3LFKIIm-sc=w300</p>
+</div>
+
+</center>
+
+<div id="tips" class="container" style="display:none">
+
+<h2> Trouble-shooting, Tips & Lessons </h2>
+
+<p>  These are some of my experiences, troubles and solutions I encountered at the work place.  One of the best experience was to de-bug and work through situations that did not pan out as intended. Also how my previous tasks could've been accomplished more efficiently. Below are some of the lessons I learnt, I would like to share with other Rails beginners. </p> <br />
+
+<p>1: To install gems, simply use bundle install, rather than bundle update.  Bundle update upgrades the gem to their most recent version.  This may be problematic as the some gems depend on other gems with their older versions.  Upgrading those gems could result in breaking dependencies.
+If you have upgraded the gem, one way is to delete the Gemlock file, and re-install the gems, this should any conflicting error messages given.</p><br />
+
+<p> 2: Google, stackoverflow, gitbuh, heroku(faq’s) are a great resource for trouble shooting.
+Railstutorialguide is a better resource for thorough explanations, examples and documentation of functions, and the use of ruby on rails language.  It is a much quicker reference than Michael Hartl’s tutorial which is extremely test driven development oriented. </p> <br />
+
+
+<p> 3:  Deploying Redmine on Heroku was rather difficult as it would reject the push for various reasons.  It would give an error and then another would appear the next time.  Trouble shooting was a long and lengthy process; It was because I was not working under the right branch.
+When cloning an open source project from github, be cautious of the current ruby version and branch you are working under.  You generally want to work under the master branch as that is the most up to date and bug free version.  The branch I was working under was out-dated and broken.
+Lastly, the reason I was working under that branch is because the Redmine installation process advised me so.  Not every installation process written on a site is fool-proof or completely accurate.  One cannot just blindly follow steps as they may lead one astray; One always want to have a certain level of knowledge and understanding of the commands and functions at use. </p><br />
+
+
+<p> 4:  Learning where the classes are held and implementing a previously de-bugged code is great lesson.  Most of the code is built using blocks previously de-bugged and working code.  Learning to utilize those is a great skill to have. </p><br />
+
+
+<p> 5: It is better to make classes and partial to be include on the page rather than styling everything separately.  Classes and partials make you code more modular, easier to maintain and better to look at.</p><br />
+
+<p> 6:  Console.log(var) is a great tool to print what values are stored in a variable.
+Controller Logic is extremely important when pushing values through to the database. </p> 
+
+</div>

@@ -1,4 +1,4 @@
-StupeApp::Application.routes.draw do
+Rwilson::Application.routes.draw do
 
   root to: 'resources#home' , via: :get
   # The priority is based upon order of creation:
