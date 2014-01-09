@@ -89,6 +89,22 @@ p{
 		$('#conclusion').slideUp();
 		$('#acknowledgements').slideUp();
 		$('#tips').slideUp();
+		$('#firstPage').slideUp();
+
+
+		$('#giftopiaIntro').slideUp();
+		$('#feddevIntro').slideUp();
+
+		if(document.getElementById(id).style.display == "none"){
+			$('#'+ id).slideDown();
+		}
+	};
+
+	function toggle2(id){
+		$('#giftopiaIntro').slideUp();
+		$('#feddevIntro').slideUp();
+		$('#firstPage').slideUp();
+		
 
 		if(document.getElementById(id).style.display == "none"){
 			$('#'+ id).slideDown();
@@ -96,7 +112,7 @@ p{
 	};
 
 	 $(document).ready(function () {
-	 	$('#intro').slideDown();
+	 	$('#firstPage').slideDown();
 	 });
 </script>
 
@@ -122,17 +138,19 @@ p{
 <h1>Raaid Wilson Co-op Report</h1>
 </center>
 
-
-<div id="intro" class="container" style="display:none;">
-	<h2>Welcome</h2>
-
-	<p>Hello World,<br />
-	Welcome to my first website.  As a result of my co-op work term at Giftopia Inc.  I was able to create my own Heroku application using Ruby on Rails.  This website is a small portion of the vast knowledge gained at Giftopia.  Please use the menu bar, to navigate the website and find out more about my sumer 2013 work term. </p>
-
-	<p>This website is about my summer 2013 work experience with Ruby on Rails; It is a web developing language to create a website which was then deployed through a tool called Heroku; much like this website itself. I will discuss some of the skills I learned as well as some goals I worked towards; the technologies I worked with and some outstanding aspects of the project.  This site will include some tips and techniques on how to develop successful applications, as well as the cluster of languages and tools associated with rails; some shortcuts to more productive coding sessions, resources available at your disposal for you to create a successful website and some common simple errors I encountered and their solutions that could potentially save you quite a bit of time through trouble shooting.</p>
-
-
+<div id="intro" class="container">
+	
+  	<h2> Welcome </h2>
+	<p> Hello World, <br />
+	Welcome to my website.   This is a blog or a presentation of the co-op experience at the University of Guelph.  An insight into the beginnning of my journey in the workplace.  The co-op program supports and leads students as they make future career and education desicions.  It has provided me with job search skills, and experiental learning and employment opportunites.  So far, I have worked on 2 co-op jobs till date.  One for Giftopia on the Summer 2013 and the other one for Feddev in Fall 2013.  I will discuss some of the skills I learned as well as some goals I worked towards; the technologies I worked with and some outstanding aspects of the projects, through my two work terms.
 	</p>
+
+	<p><br />
+	As a result of my first co-op work term at Giftopia Inc.  I was able to create my own Heroku application using Ruby on Rails.  This website is a small portion of the vast knowledge gained at Giftopia.</p>
+
+	<p>My first work experience involved Ruby on Rails; It is a web developing language to create a website which was then deployed through a tool called Heroku; much like this website itself.  For Fall 2013 I worked for the government. This site will include some tips and techniques on how to develop successful applications, as well as some lessons I learnt in my experience working for the government.</p>
+
+
 </div>
 
 
@@ -296,7 +314,7 @@ p{
 
 <div id="jd" class="container" style="display:none">
 <h2>Job Description:</h2>
- <p>Giftopia is a fast paced work environment with an incredible opportunity to jump into a project waste deep and develop real world practical software development skills.  I worked on the development of Eventastic.  I worked with various web technologies like Ruby on Rails, JavaScript and JQuery.  I familiarized myself with concepts and desihn pattersn such as MVC.  </p>
+ <p>Giftopia is a fast paced work environment with an incredible opportunity to jump into a project waste deep and develop real world practical software development skills.  I worked on the development of Eventastic.  I worked with various web technologies like Ruby on Rails, JavaScript and JQuery.  I familiarized myself with concepts and design patterns such as MVC.  </p>
 
 <p>The most unique aspect of my job is that there were only 6 people in the development team, and everyone sat in the same room coding with computers next to each other.  The president of the company worked alongside our table, and I got to know him personally as well.  The most unique aspect would be my colleagues and my CTO.  It has been an absolute pleasure working with my team.  The skills needed for the job was some previous coding experience, self-motivation, and ability to work with minimal supervision.  Most of the technical skills were learnt on the job.  </p>
 </div>
