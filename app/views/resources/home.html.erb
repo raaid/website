@@ -92,8 +92,18 @@ p{
 		$('#firstPage').slideUp();
 
 
-		$('#giftopiaIntro').slideUp();
-		$('#feddevIntro').slideUp();
+		$('#giftopiaEmployer').slideUp();
+		$('#feddevEmployer').slideUp();
+		$('#giftopiajd').slideUp();
+		$('#feddevjd').slideUp();
+		$('#feddevtechs').slideUp();
+		$('#giftopiatechs').slideUp();
+		$('#giftopiagoals').slideUp();
+		$('#feddevgoals').slideUp();
+		$('#feddevconclusion').slideUp();
+		$('#giftopiaconclusion').slideUp();
+		$('#giftopiatips').slideUp();
+		$('#feddevtips').slideUp();
 
 		if(document.getElementById(id).style.display == "none"){
 			$('#'+ id).slideDown();
@@ -101,10 +111,18 @@ p{
 	};
 
 	function toggle2(id){
-		$('#giftopiaIntro').slideUp();
-		$('#feddevIntro').slideUp();
-		$('#firstPage').slideUp();
-		
+		$('#giftopiaEmployer').slideUp();
+		$('#feddevEmployer').slideUp();
+		$('#giftopiajd').slideUp();
+		$('#feddevjd').slideUp();
+		$('#feddevtechs').slideUp();
+		$('#giftopiatechs').slideUp();
+		$('#giftopiagoals').slideUp();
+		$('#feddevgoals').slideUp();
+		$('#feddevconclusion').slideUp();
+		$('#giftopiaconclusion').slideUp();	
+		$('#giftopiatips').slideUp();
+		$('#feddevtips').slideUp();
 
 		if(document.getElementById(id).style.display == "none"){
 			$('#'+ id).slideDown();
@@ -112,7 +130,7 @@ p{
 	};
 
 	 $(document).ready(function () {
-	 	$('#firstPage').slideDown();
+	 	$('#intro').slideDown();
 	 });
 </script>
 
@@ -141,22 +159,59 @@ p{
 <div id="intro" class="container">
 	
   	<h2> Welcome </h2>
+
+<img style="width:40%; float:right;" src="http://www.bigredbarrel.com/blog/wp-content/uploads/2011/12/welcome-y2.jpg"></img>
+
 	<p> Hello World, <br />
-	Welcome to my website.   This is a blog or a presentation of the co-op experience at the University of Guelph.  An insight into the beginnning of my journey in the workplace.  The co-op program supports and leads students as they make future career and education desicions.  It has provided me with job search skills, and experiental learning and employment opportunites.  So far, I have worked on 2 co-op jobs till date.  One for Giftopia on the Summer 2013 and the other one for Feddev in Fall 2013.  I will discuss some of the skills I learned as well as some goals I worked towards; the technologies I worked with and some outstanding aspects of the projects, through my two work terms.
+	Welcome to my website.   This is a blog or a presentation of the co-op experience at the University of Guelph.  An insight into the beginnning of my journey in the workplace.  The co-op program supports and leads students as they make future career and education desicions.  It has provided me with job search skills, and experiental learning and employment opportunites.  So far, I have worked on 2 co-op jobs till date.  One for Giftopia on the Summer 2013 and the other one for FedDev in Fall 2013.  I will discuss some of the skills I learned as well as some goals I worked towards; the technologies I worked with and some outstanding aspects of the projects, through my two work terms.
 	</p>
 
 	<p><br />
 	As a result of my first co-op work term at Giftopia Inc.  I was able to create my own Heroku application using Ruby on Rails.  This website is a small portion of the vast knowledge gained at Giftopia.</p>
 
-	<p>My first work experience involved Ruby on Rails; It is a web developing language to create a website which was then deployed through a tool called Heroku; much like this website itself.  For Fall 2013 I worked for the government. This site will include some tips and techniques on how to develop successful applications, as well as some lessons I learnt in my experience working for the government.</p>
-
+	<p> For Fall 2013 I worked for the government. This site will include some tips and techniques on how to develop successful applications, as well as some lessons I learnt in my experience working for the government.</p>
 
 </div>
 
-
 <div id="employer" class="container" style="display:none">
+  <div class="menu" onclick="toggle2('giftopiaEmployer')">Giftopia</div>
+  <div class="menu" onclick="toggle2('feddevEmployer')">FedDev</div>
+  <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
+</div>
+
+<div id="jd" class="container" style ="display:none">
+  <div class="menu" onclick="toggle2('giftopiajd')">Giftopia</div>
+  <div class="menu" onclick="toggle2('feddevjd')">FedDev</div>
+  <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
+</div>
+
+<div id="techs" class="container" style="display:none">
+  <div class="menu" onclick="toggle2('giftopiatechs')">Giftopia</div>
+  <div class="menu" onclick="toggle2('feddevtechs')">FedDev</div>
+  <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
+</div>
+
+<div id="goals" class="container" style="display:none">
+  <div class="menu" onclick="toggle2('giftopiagoals')">Giftopia</div>
+  <div class="menu" onclick="toggle2('feddevgoals')">FedDev</div>
+  <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
+</div>
+
+<div id="conclusion" class="container" style="display:none">
+  <div class="menu" onclick="toggle2('giftopiaconclusion')">Giftopia</div>
+  <div class="menu" onclick="toggle2('feddevconclusion')">FedDev</div>
+  <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
+</div>
+
+<div id="tips" class="container" style="display:none">
+  <div class="menu" onclick="toggle2('giftopiatips')">Giftopia</div>
+  <div class="menu" onclick="toggle2('feddevtips')">FedDev</div>
+  <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
+</div>
+
+<div id="giftopiaEmployer" class="container" style="display:none">
 	
-	<h2>Employer</h2>
+	<h2>Giftopia Inc.</h2>
 
 	<img style="width:26%; float:right; height:120px" src="http://www.techvibes.com/public/cache/company/220x145/14093_giftopia_inc_255255255.jpg"></img>
 
@@ -173,15 +228,30 @@ p{
 	<p>The area of computing science this is related to is Web Development.  My CTO's name was Adam Morrison.  He recently got married.  He himself is a University of Guelph graduate in Systems of Engineering.  He used to skate at an Olympic level.  The founder of Giftopia, Randy Bird, is a serial entrepreneur with over thirty years of experience running his own businesses. He was inspired to create Giftopia because he was having a hard time finding the right gifts for family and friends, and wanted to make the entire gift shopping experience easier.  </p>
 	</div>
 
-
 	</div>
-	
-	
 	
 </div>
 
+<div id="feddevEmployer" class="container" style="display:none">
+  <h2> Federal Economic Development Agency for Southern Ontario </h2>
+  <br />
 
-<div id="goals" class="container" style="display:none">
+  <div style="width:26%; float:right">
+  <img style="float:right;" src="http://peterbraid.ca/wp-content/uploads/2013/12/FDO_Twitter_thumbnailSmall.jpg"></img>
+
+  <img src="http://www.fundica.com/fundica_template/providers/07a6_1333131946.png"></img>
+  </div>
+
+  <p>  Federal Economic Developent Agency for Southern Ontario is a departement within the Government of Canada with an unfortunately long name.  My email address associated with the agency was rather lengthy as well (raaid.wilson@feddevontario.gc.ca).  From here on in, they shall be refered to as FedDev or FedDev Ontario.  On the whole, they help Southern Ontario communities and businesses diversify and strengthen their local economies, by helping them to become more competitive, innovative and productive. 
+
+  <br /> <br />FedDev Ontario will work to provide the tools for regional partners to build on their strengths, positioning Southern Ontario to succeed in the emerging, knowledge-based economy.  They essentailly provide start-up businesses funding, they require to run their day to day operations.  It is an initiative that builds the emerging business from bottom up.  One that will strengthen the economy of Southern Ontario.  That is an overview in their role in the government.  I however, do not know the details how their main functions operate, the procedures associated of their main role.  I worked for Internal Services.  Please see Job Description for further details. 
+
+</div>
+
+
+
+
+<div id="giftopiagoals" class="container" style="display:none">
 
 <h2>Goals</h2>
 
@@ -256,15 +326,97 @@ p{
 
 </div>
 
+<div id="feddevgoals" class="container" style="display:none">
+<h2> Goals </h2><br />
+
+<h3>Discipline</h3>
+<p> For my work habits I tend to be a bit of a perfectionist.  That type of work attitude would not help me in this environment, as often times there would be several things due at once.  I had to develop the right attitude to exceed in the workplace.  For example; rather than thinking about the exact right words for an email, I would fire off some emails rather quickly.  This developed alongside my corporate communication skills.</p>  <br /><br />
+
+<h3> Asking the right questions</h3>
+<p>  At my previous job, Adam Morrisson, my CTO was more like a teacher than an employer.  The situation at FedDev was drastically different.  There were set processes in place, however most times, the next steps to take had to be figured out; decisions that depended on my manager and I.  Moving forward, the right questions had to be asked in order to cover all the bases and make an informed decision.  For example, dealing with CBO's request to purchase more computers.  Or an odd request; such as buying a laptop, which is not supported by IC, but is however on the standing offer.
+</p><br /><br />
+
+<h3>Project Management Skills</h3>
+<p> For DSR, I was coordinating with the staff of FedDev, the DSR testing team, the IC technicians, the main contact for keeping the DM up to date; I had to keep everyone on the same page to minimize discrepencies and degrees of error.  This also includes my goal to function in a team environment efficiently.</p><br />
+
+<h3> Basic PC Understanding </h3> 
+<p>  Better understanding of basic PC Peripherals, PC hardware components, Arms, and hard-drives.  This involved putting together monitor arms and often setting up people's work stations.  There were some duties which were not covered by IC's Service Level Agreements which fell upon us.  In this job, we also took apart a computer and put it back together; courtesy of my supervisor.  And learned how to connect a KVM switch; used to connect two computers to two seperate monitors. </p><br />
+
+<h3> DSR </h3>
+
+<p> DSR: My work on this project was basically one main goal.  There is a lot involved; which is why I choose to discuss the details here rather than in the "Job Description" section.  I had to prepare a deployment map, which consisted of all the staff in FedDev, and the softwares they use.  The versions of the software the amount needed to be installed had to be included.  For most software, the versions were being upgraded, their pricings had to be found.  As well as the licencing information we had, in order to upgrade them.  Going  forward with DSR, what IC was implementing was a lockdown desktop.  What this meant is that there was going to be a stricter control on what people could download and purchase for software.  The software would have to be approved by the IT team (my manager and I), and would require an IC technician's Admin rights to be installed.  Only software that was approved by CIO, would be allowed to install.  This would help SSC provide consistent support throughout FedDev and help IT better control the budgeting, tracking and licence information.  This was my most important role at Feddev, as Microsoft is retiring its support for Win XP this april.  If the migrations were withheld, feddev would have to pay Microsoft millions of dollars for support as it would a huge security risk.  If the migrations were unsuccessful, or if the information provided by IT was inaccurate.  The big risk would be that the IC Service Desk would be flooded with requests, with not enough technicians to handle them, Or a lot of staff would be without the proper utilities for a certain number of days, which they need to complete their day to day activities.  </p><br />
+
+<p>With regards to DSR; I was also responsible for application testing, procurement and packaging.  So for all the applications the staff currently uses, I was the app custodian for a few of them.  I had to ensure that the apps were Windows 7 Compatible.  That all their functions worked.  If they didn't I would work the the testing team to de-bug those issues.  Afterwards I would prepare the installation instructions and provide the licensing info and installs; and place them in the appropriate shared directory.</p>
+<br /><br />
+
+<h3>Transfer of Knowledge</h3>
+<p> One of the main aspects of the government is that people are always moving around internally as terms constantly end and other people take over your work.  Handing over all the information to the person taking over my position was another one my goals.  All the information had to be written, properly documented and communicated over to my successor.  It had to be done in such a way, that no information was missed; especially anything critical, or aspects that I alone knew about.  Also I had to let everyone else, with whom I was co-ordinating; know that I was leaving and to continue the project with the new co-op student.  The people were really nice, wished me well; and said that as a client, I was extremely comprehensive and cooperative.  It was a nice tie up to the semester. </p><br /><br />
+
+<h3> Time Management: Prioritizing Tasks effeciently.</h3>
+<p>  This was extremely important in-order for me to do my job well.  I acheived this goal through experience.  For example, if there were tasks whose completion depended on intermediaries; I would send off those emails first; especially if I anticipate that the information is difficult to find.  Any packages I would send off to remote locations would be dealt with sooner than the requests in kitchener.  I learned about how long the teams for each application took to respond.  IC was the slowest as there were very few technicians; so I would create tickets for those requests first. </p><br /><br />
+
+<h3> Corporate Communication Skills</h3>
+<p>  This includes the ability to clearly and concisely communicate my thoughts both in writing and orally.  It was something learned as a result of the job with a bit of help from my supervsior.  </p>
+
+
+</div>
+
+<div id="feddevtechs" class="container" style="display:none">
+<h2> Technologies Employed </h2>
+
+<p> My job at FedDev was not a coding job.  It was more of an exposure to the work systems in the Government of Canada.  I was exposed to various processes along with some tools I used like, GCDOCS, JIRA, and remote connection for DSR testing.  Below is the running list of Accronyms for a reference.</p> <br />  
+
+<h3>Departements within FedDev</h3>
+
+<p> <b>BICD</b> - Business Innovation and Community Development</p> 
+<p> <b>CBO</b> - Canada Business Ontario </p>
+<p> <b>HR</b> - Human Resources </p>
+<p> <b>COMMS</b> - Communications </p> 
+<p> <b>IM/IT</b> - Information Management/ Information Technology </p> <br />
+
+<h3> Access to Applications I Facilitated </h3>
+
+<p> <b>FDOGC</b> - FedDev Ontario Grants and Contributions </p>
+<p> <b>CMIS</b> - Content Management Interoperatability Service </p> 
+<p> <b>QP Cards</b> - Question Period Cards</p>
+<p> <b>GCRS</b> - Government Contract Regulations </p>
+<p> <b>IFMS</b> - Integrated Financial and Material System; A system used for Asset Management by Procurement <br />
+<br />
+
+<h3> My Projects </h3>
+
+<p><b> CTC </b> - Cut the Cord </p>
+<p><b> DSR </b> - Desktop Software Renewal </p>
+<p><b> DM </b> - Deployment Map </p> <br />
+
+
+<h3> Tools I used </h3>
+<p><b> JIRA</b> -  A project management and issue tracking tool similar to Redmine the one I deployed for Giftopia.
+</p>
+<p><b> RVM Monitor Arms </b> - Used to uphold the monitors to maximize space when having a dual monitor setup. This was part of work place 2.0.  Before everyone used to have large cubicles that went up all the way to the ceiling.  There also used to be an office in Simcoe.  That office closed and they moved over to the Kitchener Location.  Subsequently the cubicles were shrunk; and the work place was more compact.  It was also an effort to encourage open communication over emails.</p>
+
+<p><b> Excel</b> - I used it for Data Logging, as well as preparing the Deployment Map. </p>
+<p><b> SnagIT</b> - A Snipping Tool, which is extremely handy when taking screen shots or creating documents that require lots of copying and pasting. </p>
+<p><b> BassetPro</b> - Used to track all the assets deployed and used for inventory management.  This was IT's tool for their records; much like IFMS. </p>
+
+<p><b> GCDOCS </b> A web based application, used for information management and logging throughout Feddev.  It is like Dropbox, it enables you to save your documents online.  It also allows for editing, using workflows, encryption, restricted access, live chat, and creating a personal search.</p>
+
+<p>  The government of Canada needed such a database for storing files, as it is a part of their greening the environment initiative.  The IM/IT team at feddev were the ones to start this project and introduce it as the official app.  Feddev and OCL are currently the only agencies using this platform as test before spreading it to other departements. </p>
+
+<p><b> Enterprise Connect</b> It is a coporate app which lets you manage all your GCDOCS document offline.  You could open and Edit documents straight through this install.  And then drag and drop all your folders and work done, into GCDOCS.  It essentially creates the same space as GCDOCS inside your computer. </p>
+
+<p>  This is ideal for creating and submitting large amounts of documents and folders at one time; rather than adding them one by one through the website.  You can also have it connected to your Outlook email and save any important communications inside the space created by Enterprise connect.  And those messages are saved in GCDOCS by doing just that.</p>
+
+<p><b>Office Editor</b> is the editing tool that lets you open and edit the GCDOCS documents through word or excel or any other supported form of documentations.  </p>
+
+</div>
 
 
 
 
 
 
-
-
-<div id="techs" class="container" style="display:none">
+<div id="giftopiatechs" class="container" style="display:none">
 <h2>Technologies Employed</h2>
 <p>This section outlines all the technologies I was exposed to on this term, a brief description and acronym of it, and some of the uses of it, as experienced by me.</p>
 
@@ -306,27 +458,86 @@ p{
 
 <h3>Secure Shell (SSH) keys:</h3><p>  It is a cryptographic network protocol for secure data communication between two networks.  It was used to mainly to pull code deployed through heroku on the main server, so I would work with the latest code version.<p><br />
 
-
 </div>
 
 
-
-
-<div id="jd" class="container" style="display:none">
+<div id="giftopiajd" class="container" style="display:none">
 <h2>Job Description:</h2>
+<img style="width:40%; float:right" src="http://codedmonkey.files.wordpress.com/2010/11/codemonkey.jpg"></img>
  <p>Giftopia is a fast paced work environment with an incredible opportunity to jump into a project waste deep and develop real world practical software development skills.  I worked on the development of Eventastic.  I worked with various web technologies like Ruby on Rails, JavaScript and JQuery.  I familiarized myself with concepts and design patterns such as MVC.  </p>
 
 <p>The most unique aspect of my job is that there were only 6 people in the development team, and everyone sat in the same room coding with computers next to each other.  The president of the company worked alongside our table, and I got to know him personally as well.  The most unique aspect would be my colleagues and my CTO.  It has been an absolute pleasure working with my team.  The skills needed for the job was some previous coding experience, self-motivation, and ability to work with minimal supervision.  Most of the technical skills were learnt on the job.  </p>
 </div>
 
-<div id="conclusion" class="container" style="display:none">
+<div id="feddevjd" class="container" style="display:none">
+
+<h2> Job Description</h2>
+
+<img style="width:40%; float:right;" src="http://nerdinkblog.files.wordpress.com/2013/01/1642562-98978-busy-office-guy-at-work-on-his-computer.jpeg"></img>
+
+<p>
+First off, a little background on our Office.  FedDev spanned over 5 floors, which consisted of the following departements: BICD, Comms, Finance, HR.  I was part of the IM/IT team in Internal Services.  Internal Services consisted of Procurement, mailroom, accomodations, information management and information technology.  We were the head of IT for 3 locations, which were Kitchener, Ottawa, Peterborough and Toronto.
+<br />
+<br />
+
+They use a lot of Accronyms in the Government.  I have included a list of Acronyms in the Technology section of my website.   My job was to work wth IC, CIO, and SSC to facilitate and co-ordinate with them, to ensure the IT needs of all the staff of 250 people in the agency were met.  
+This was a mandatory position withing the government that had to be filled and I was treated as any other employee within the agency.  I had actual roles and responsibilities, which had concequences should they not be completed in a timely manner.  Unlike Giftopia, where my awesome CTO took the pressure off of all the co-op students; this was a much more actual world workplace in the sense that there were pressures that rested solely on me; associated with completing work in an environment which affected all of 250 Staff. 
+
+<br />
+<br />
+
+My main duties included oversight of the Desktop Software Renewal (DSR) project.  The staff of FedDev Ontario currently use the Windows XP Operating System.  And they are migrating over to Windows 7.  
+
+I had to facilite any FDOGC, GCRS, CMIS, GCDOCS, requests.  Any software or hardware requests that came through.  
+
+Track and Tag all assets in BassetPro, This ranged from any expensive software, to all the PC's, Laptops, Blackberry Cellphones, 
+
+Integration of CBO into FedDev and ensuring that all of thier IT needs are meet and accounted for.
+
+</p>
+</div>
+
+<div id="giftopiaconclusion" class="container" style="display:none">
 <h2>Conclusion:</h2>
-<p>This has been an extremely fulfilling first Co-op work term.  I had a lot to learn, met some great people and gained real world practical Software Development skills.  I have had the privilege of working with great colleagues in a positive professional environment, under the great leadership of my CTO, Adam Morrison.  I learned the basics of how a website is created and deployed.  Managed a variety of Html pages with embedded ruby, used CSS to control the style and layout of numerous pages, worked with technologies such as AJAX, JSON, JavaScript, JQuery.  I incorporated concepts and design patterns like MVC in the projects assigned to me, learned how to manage a database using Postgresql; collaborated in a real world project using Github and Heroku.  Learned version control through RVM and gained invaluable problem solving skills, only learnt through experience.  I also extensively worked on various research projects, and implemented API’s each with unique aspects.  Lastly my stand alone project of deploying Red-mine is a highlight of my work at Giftopia. </p>
+<p>This has been an extremely fulfilling first Co-op work term.  I had a lot to learn, met some great people and gained real world practical Software Development skills.  I have had the privilege of working with great colleagues in a positive professional environment, under the great leadership of my CTO, Adam Morrison.  I learned the basics of how a website is created and deployed.  Managed a variety of Html pages with embedded ruby, used CSS to control the style and layout of numerous pages, worked with technologies such as AJAX, JSON, JavaScript, JQuery.  I incorporated concepts and design patterns like MVC in the projects assigned to me, learned how to manage a database using Postgresql; collaborated in a real world project using Github and Heroku.  Learned version control through RVM and gained invaluable problem solving skills, only learnt through experience.  I also extensively worked on various research projects, and implemented API’s each with unique aspects.  Lastly my stand alone project of deploying Red-mine is a highlight of my work at Giftopia. 
+</p>
 </div> 
+
+<div id="feddevconclusion" class="container" style="display:none">
+
+<h2> Conclusion </h2>
+
+<p>
+FedDev for me personally was a transition point in my life, where I went from a teanager to an adult.  This is where all the best practices had to be learned and utilized.  These include punctuality, discipline and a good work ethic.  This was the first time, where a lot of responsibility had been placed upon me that had to be met.  It was rewarding because I learned important work skills that I would use in any environment.  I learned how to work with external agencies, and deal with clients.  I also learned how to manage, multi-task and prioritize my work as per my job demand.  The work environment can be quite stressful, and that stress level has to be managed in order to continue good productivity.  Starting my career journey.  I never really knew what people meant when the said "It's good experience".  This job was where the word "experience" truly came into play, as the duties of my job had to be performed quite diligently.  I came out of this job a more competent and confident worker, because of said experience.  Now, at an interview I could talk about real world work experience, and discuss relevant examples with actual stakes rather than "the project where I needed to recieve a certain grade for school".  I now knew what it was like to work for the government in contrast with the private industry where the CEO of the company sat right next to me.  I met some incredible people and made great connections.   
+</p>
+
+</div>
 
 <div id="acknowledgements" class="container" style="display:none">
 <h2>Acknowledgements:</h2>
-<p>  I would like to thank my co-op coordinator Laura Gatto for her continuous support, guidance and encouragement throughout job searching process.  I would like to thank my CTO Adam Morisson for being a great mentor; and for passing on some of his wealth of knowledge and experience; his leadership, patience, and positivity made this term a truly enjoyable one.  And Randall Bird for providing a brilliant platform to work with. </p> 
+
+<img style="width:40%; float:right;" src="http://www.northernlightshumanesociety.ca/wp-content/uploads/2012/11/thank-you1.jpg"></img>
+
+
+<p>  I would like to thank my co-op coordinator Laura Gatto for her continuous support, guidance and encouragement throughout job searching process.  Also Greg Klotz for constantly working me with and being a patient advisor as I discover myself in my Academic path.
+<br />
+<br />
+
+I would like to thank my CTO Adam Morisson for being a great mentor; and for passing on some of his wealth of knowledge and experience; his leadership, patience, and positivity made this term a truly enjoyable one.  And Randall Bird for providing a brilliant platform to work with. </p> 
+
+<br />
+
+<p>  The list of people, I would like to thank is just going to get longer and longer on this site.  I might break it up into different parts in the future.  I would like to thank the entire IM/IT team, for making this term a wonderful one, along with the enjoyable but hectic work.  It really is all about the people you work with.</p>
+
+<br />
+
+<p>  I worked extremely closely with my manager David Schwindt.  Even though, he was managing, the IM, accomodations, mailroom and security teams; he was never short of time; and helped me settle into my role quite comfortably.  It is always good to have a nice manager, in this job in particular; the support of your manager is quite necessary for me to do my job confidently and happily, considering all the pressures of the job, his support was the backbone or the foundation of the confidence in my work.</p>
+
+<br />
+
+<p>  I would also like to thank Lenny Walker.  Along with David, he was a continuous source of support and encouragement.  He is a wealth of knowledge and experience and a joy to work with.  I am blessed to have mentors like him; who along with his work, provided feedback and help with anything I required.  </p>
+
+<br />
 
 <p>Laura Gatto, B.A., M.Sc.<br />
 Co-op Co-ordinator (Environmental Sciences, Computer Science & Software Engineering)<br />
@@ -362,22 +573,46 @@ Cell: 519-241-8833<br />
 randy@giftopia.me<br />
 </p><br />
 
+<p>
+
+~Lenny Walker<br/>
+ 
+IT Project Officer - GCDOCS Administrator / IM/IT / Chief Financial Officer Branch<br />
+Federal Economic Development Agency for Southern Ontario / Government of Canada<br />
+lenny.walker@feddevontario.gc.ca / Telephone: 226-220-8854<br />
+ 
+</p>
+<br />
+
+<p>
+David Schwindt<br />
+ 
+Manager, IM/IT, Chief Financial Officer Branch<br />
+Federal Economic Development Agency for Southern Ontario / Government of Canada<br />
+david.schwindt@feddevontario.gc.ca / Telephone: 519-404-9150<br />
+</p>
+
 <h2>Sources</h2>
 	<p>http://www.uoguelph.ca/info/graphicstandards/files/UofGidentifier.jpg</p>
 	<p>http://www.techvibes.com/public/cache/company/220x145/14093_giftopia_inc_255255255.jpg</p>
 	<p>http://www.eventastic.com/img/eventastic_mobile.png</p>
 	<p>https://lh3.ggpht.com/YEfWGuslxVoduDLBpQWek0H73nA_3aZ_BQu6ls7wTrPRvmbxDghLPU99i3LFKIIm-sc=w300</p>
+	<p>http://peterbraid.ca/wp-content/uploads/2013/12/FDO_Twitter_thumbnailSmall.jpg</p>
+	<p>http://www.fundica.com/fundica_template/providers/07a6_1333131946.png</p>
+	<p>http://nerdinkblog.files.wordpress.com/2013/01/1642562-98978-busy-office-guy-at-work-on-his-computer.jpeg</p>
+	<p>http://www.northernlightshumanesociety.ca/wp-content/uploads/2012/11/thank-you1.jpg</p>
+	<p>http://codedmonkey.files.wordpress.com/2010/11/codemonkey.jpg</p>
 </div>
 
 </center>
 
-<div id="tips" class="container" style="display:none">
+<div id="giftopiatips" class="container" style="display:none">
 
 <h2> Trouble-shooting, Tips & Lessons </h2>
 
-<p>  These are some of my experiences, troubles and solutions I encountered at the work place.  One of the best experience was to de-bug and work through situations that did not pan out as intended. Also how my previous tasks could've been accomplished more efficiently. Below are some of the lessons I learnt, I would like to share with other Rails beginners. </p> <br />
+<p> These are some of my experiences, troubles and solutions I encountered at the work place.  One of the best experience was to de-bug and work through situations that did not pan out as intended. Also how my previous tasks could've been accomplished more efficiently. Below are some of the lessons I learnt, I would like to share with other Rails beginners. </p> <br />
 
-<p>1: To install gems, simply use bundle install, rather than bundle update.  Bundle update upgrades the gem to their most recent version.  This may be problematic as the some gems depend on other gems with their older versions.  Upgrading those gems could result in breaking dependencies.
+<p> 1: To install gems, simply use bundle install, rather than bundle update.  Bundle update upgrades the gem to their most recent version.  This may be problematic as the some gems depend on other gems with their older versions.  Upgrading those gems could result in breaking dependencies.
 If you have upgraded the gem, one way is to delete the Gemlock file, and re-install the gems, this should any conflicting error messages given.</p><br />
 
 <p> 2: Google, stackoverflow, gitbuh, heroku(faq’s) are a great resource for trouble shooting.
@@ -398,3 +633,25 @@ Lastly, the reason I was working under that branch is because the Redmine instal
 Controller Logic is extremely important when pushing values through to the database. </p> 
 
 </div>
+
+<div id="feddevtips" class="container" style="display:none">
+
+<h2> Lessons Learned </h2>
+
+<p> Below are some things that I learned in particular that I would like to mention.  Some of them are my experience, others may just seem obvious; but worth mentioning. </p><br />
+
+<p> 1: You must proactively seek a solution rather than letting it be.  One of the major mistakes I made at work, is that I passed an application through testing when some of its functionality was not working.  The language around that mistake was "It should work with the java updates"; "I am not really worried".  My managers did not see it as my fault.  I however feel, that I should have followed up to ensure that the functions worked.  That and you should always have written approval to progress forward.  That one functionality turned out to be just a tip of the iceberg and led to more serious issues that could have been discovered a month earlier.  </p><br />
+
+<p> 2: When looking for information, ask all the sources at once, and await reply, rather than asking different sources one by one.  It saves crucial time.  Also people are more likely to respond to a friendly one-liner email; than to a formal one in paragraph format.  It is much easier to recieve a reply if emailing one directly rather than CC'ing an entire team.  People feel less pressurized, and will give you an answer off the top of their head (usually correct) rather quickly than having to think of the proper formal wording of an answer. </p><br />
+
+<p> 3: Also, one cannot just email people higher up in the government.  For DSR, I had to collect Minister GoodYear's barcode for the deployment map.  I fortunately did not end up making this mistake; as I could not find his email address and asked my Manager for that info.  However My managers made fun of me for the remainder of the semester (all in good fun).  One must always go through liasons to get information for the Ministers Office and other dignitaries.  </p><br />
+
+<p> 4: If ever in doubt, seek clairification. </p><br />
+
+<p> 5: When coordinating a team project.  You need to ensure that their end is being upheld as well.  For example after the final version of the DM was sent on our end.  DSR Leads had to make any further changes.  Sometimes they missed those changes.   It is always best to review to minimize errors. </p><br />
+
+
+</div>
+
+
+
