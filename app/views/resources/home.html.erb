@@ -124,16 +124,27 @@ p{
 	function toggle2(id){
 		$('#giftopiaEmployer').slideUp();
 		$('#feddevEmployer').slideUp();
+		$('#blueEmployer').slideUp();
+
 		$('#giftopiajd').slideUp();
 		$('#feddevjd').slideUp();
+		$('#bluejd').slideUp();
+
 		$('#feddevtechs').slideUp();
 		$('#giftopiatechs').slideUp();
+		$('#bluetechs').slideUp();
+
 		$('#giftopiagoals').slideUp();
 		$('#feddevgoals').slideUp();
+		$('#bluegoals').slideUp();
+
 		$('#feddevconclusion').slideUp();
-		$('#giftopiaconclusion').slideUp();	
+		$('#giftopiaconclusion').slideUp();
+		$('#blueconclusion').slideUp();
+
 		$('#giftopiatips').slideUp();
 		$('#feddevtips').slideUp();
+		$('#bluetips').slideUp();
 
 		if(document.getElementById(id).style.display == "none"){
 			$('#'+ id).slideDown();
@@ -187,36 +198,42 @@ p{
 <div id="employer" class="container" style="display:none">
   <div class="menu" onclick="toggle2('giftopiaEmployer')">Giftopia</div>
   <div class="menu" onclick="toggle2('feddevEmployer')">FedDev</div>
+  <div class="menu" onclick="toggle2('blueEmployer')">Blue North</div>
   <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
 </div>
 
 <div id="jd" class="container" style ="display:none">
   <div class="menu" onclick="toggle2('giftopiajd')">Giftopia</div>
   <div class="menu" onclick="toggle2('feddevjd')">FedDev</div>
+  <div class="menu" onclick="toggle2('bluejd')">Blue North</div>
   <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
 </div>
 
 <div id="techs" class="container" style="display:none">
   <div class="menu" onclick="toggle2('giftopiatechs')">Giftopia</div>
   <div class="menu" onclick="toggle2('feddevtechs')">FedDev</div>
+  <div class="menu" onclick="toggle2('bluetechs')">Blue North</div>
   <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
 </div>
 
 <div id="goals" class="container" style="display:none">
   <div class="menu" onclick="toggle2('giftopiagoals')">Giftopia</div>
   <div class="menu" onclick="toggle2('feddevgoals')">FedDev</div>
+  <div class="menu" onclick="toggle2('bluegoals')">Blue North</div>
   <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
 </div>
 
 <div id="conclusion" class="container" style="display:none">
   <div class="menu" onclick="toggle2('giftopiaconclusion')">Giftopia</div>
   <div class="menu" onclick="toggle2('feddevconclusion')">FedDev</div>
+  <div class="menu" onclick="toggle2('blueconclusion')">Blue North</div>
   <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
 </div>
 
 <div id="tips" class="container" style="display:none">
   <div class="menu" onclick="toggle2('giftopiatips')">Giftopia</div>
   <div class="menu" onclick="toggle2('feddevtips')">FedDev</div>
+  <div class="menu" onclick="toggle2('bluetips')">Blue North</div>
   <h3 style="margin-top:40px">  Select an Employer from the list above. </h3>
 </div>
 
@@ -248,8 +265,6 @@ p{
   <br />
 
   <div style="width:26%; float:right">
-  <img style="float:right;" src="http://peterbraid.ca/wp-content/uploads/2013/12/FDO_Twitter_thumbnailSmall.jpg"></img>
-
   <img src="http://www.fundica.com/fundica_template/providers/07a6_1333131946.png"></img>
   </div>
 
@@ -259,8 +274,10 @@ p{
 
 </div>
 
-
-
+<div id="blueEmployer" class="container" style="display:none">
+	<h2> Blue North </h2>
+	<br>
+</div>
 
 <div id="giftopiagoals" class="container" style="display:none">
 
@@ -372,6 +389,11 @@ p{
 
 </div>
 
+<div id="blueGoals" class="container" style="display:none">
+	<h2> Blue North Goals</h2>
+	<br>
+</div>
+
 <div id="feddevtechs" class="container" style="display:none">
 <h2> Technologies Employed </h2>
 
@@ -471,6 +493,10 @@ p{
 
 </div>
 
+<div id="bluetechs" class="container" style="display:none">
+	<h2> Blue North Technologies</h2>
+	<br>
+</div>
 
 <div id="giftopiajd" class="container" style="display:none">
 <h2>Job Description:</h2>
@@ -508,6 +534,11 @@ Integration of CBO into FedDev and ensuring that all of thier IT needs are meet 
 </p>
 </div>
 
+<div id="bluejd" class="container" style="display:none">
+	<h2> Blue North Job Description</h2>
+	<br>
+</div>
+
 <div id="giftopiaconclusion" class="container" style="display:none">
 <h2>Conclusion:</h2>
 <p>This has been an extremely fulfilling first Co-op work term.  I had a lot to learn, met some great people and gained real world practical Software Development skills.  I have had the privilege of working with great colleagues in a positive professional environment, under the great leadership of my CTO, Adam Morrison.  I learned the basics of how a website is created and deployed.  Managed a variety of Html pages with embedded ruby, used CSS to control the style and layout of numerous pages, worked with technologies such as AJAX, JSON, JavaScript, JQuery.  I incorporated concepts and design patterns like MVC in the projects assigned to me, learned how to manage a database using Postgresql; collaborated in a real world project using Github and Heroku.  Learned version control through RVM and gained invaluable problem solving skills, only learnt through experience.  I also extensively worked on various research projects, and implemented API’s each with unique aspects.  Lastly my stand alone project of deploying Red-mine is a highlight of my work at Giftopia. 
@@ -522,6 +553,11 @@ Integration of CBO into FedDev and ensuring that all of thier IT needs are meet 
 FedDev for me personally was a transition point in my life, where I went from a teanager to an adult.  This is where all the best practices had to be learned and utilized.  These include punctuality, discipline and a good work ethic.  This was the first time, where a lot of responsibility had been placed upon me that had to be met.  It was rewarding because I learned important work skills that I would use in any environment.  I learned how to work with external agencies, and deal with clients.  I also learned how to manage, multi-task and prioritize my work as per my job demand.  The work environment can be quite stressful, and that stress level has to be managed in order to continue good productivity.  Starting my career journey.  I never really knew what people meant when the said "It's good experience".  This job was where the word "experience" truly came into play, as the duties of my job had to be performed quite diligently.  I came out of this job a more competent and confident worker, because of said experience.  Now, at an interview I could talk about real world work experience, and discuss relevant examples with actual stakes rather than "the project where I needed to recieve a certain grade for school".  I now knew what it was like to work for the government in contrast with the private industry where the CEO of the company sat right next to me.  I met some incredible people and made great connections.   
 </p>
 
+</div>
+
+<div id="blueconclusion" class="container" style="display:none">
+	<h2> Blue North Conclusion</h2>
+	<br>
 </div>
 
 <div id="acknowledgements" class="container" style="display:none">
@@ -626,7 +662,7 @@ david.schwindt@feddevontario.gc.ca / Telephone: 519-404-9150<br />
 <p> 1: To install gems, simply use bundle install, rather than bundle update.  Bundle update upgrades the gem to their most recent version.  This may be problematic as the some gems depend on other gems with their older versions.  Upgrading those gems could result in breaking dependencies.
 If you have upgraded the gem, one way is to delete the Gemlock file, and re-install the gems, this should any conflicting error messages given.</p><br />
 
-<p> 2: Google, stackoverflow, gitbuh, heroku(faq’s) are a great resource for trouble shooting.
+<p> 2: Google, stackoverflow, github, heroku(faq’s) are a great resource for trouble shooting.
 Railstutorialguide is a better resource for thorough explanations, examples and documentation of functions, and the use of ruby on rails language.  It is a much quicker reference than Michael Hartl’s tutorial which is extremely test driven development oriented. </p> <br />
 
 
