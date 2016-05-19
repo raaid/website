@@ -835,6 +835,14 @@ Controller Logic is extremely important when pushing values through to the datab
 
 	<p> 4: For selecting a large number of values in a filter of a pivot table.  One might run a loop to populate the arrary in VBA and set it to the property pivotfieldlist.  The list of objects and their properties can be found here: <u> https://msdn.microsoft.com/en-us/library/office/ff822619.aspx</u> and they are fairly straight-forward to follow.  </p></br>
 
+	<p> 5: I found the following combination of functions extremely efficient for one purpose.  If you want values that are in one column but not the other or vice versa, you could use the following below.  For instance, in my case I had a list of donors mailed in 2012, and in 2013 I wanted to see who was cut out.  I would do a match, for each value in 2012 column and have the 2013 column defined as an array.  Match returns a numbers if it exits or "n/a" if it doesn't.  Then I would use Isnumber function to see if the donor was or wasn't mailed in 2013.  Then a simple if condition before it could give you the results you need.  For example If(isnumber(match(a2,columnToSearch,0))a2,"this donor was cut").  This would simply produce the list of donors who were mailed in both years.  0 in match parameters indicates exact match. You would drag this formula down for each entry in a.  The first of which being a2.  Isnumber returns true or false.  And the two parameters for if indicate the cell value if true or if false.</p></br>
+
+	<p> 6: Formating cells the right way is really helpful before copying and pasting the values into the powerpoint.  It is a real time-saver.  Also once working in the PowerPoint; using format painter is really better to keep all the formating consistent.  There are all sort of paste specials that help make excel really efficient.  One in particular is "transpose" which switches the rows and columns.  Always pay attention to detail so that you know whether you are pasting a formula, a reference or a value.  This could create problems if those are mixed up. </p></br>
+
+	<p> 7: When working with a pivot table; if you right click on a column, you have the option of displaying the next column in tabular form.  That combined with "do not show subtotals" option in the data ribbon of excel really helps.  When you have multiple layers of rows and want to see them side by side.  For instance, you could have a firstName, within lastName, within donorId, within dateOfBirth.  This would be useful to see them all in one row rather than the subsequent row.  It really helps organize the table.</p></br>
+
+	<p> 8: There are lots of other tips and techniques that are captured in the "Blue North Data Analyst Role" word document; that capture many more tips and techniques that pertain to blue north data specifically should the next person working there might need it. </p></br>   
+
 </div>
 
 
