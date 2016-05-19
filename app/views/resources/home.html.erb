@@ -823,7 +823,18 @@ Controller Logic is extremely important when pushing values through to the datab
 
 <div id="bluetips" class="container" style="display:none">
 	<h2> Blue North Tips</h2>
-	<br>
+
+	<p>  In this section I will give some tips specific to the Blue North Data Analyst role as well as some general excel, VBA, SQL functions and techniques useful for any setting.</p>
+	</br>
+
+	<p> 1:Convert all text cells to number format.  The format of the cells really makes a difference when trying to manipulate them.  Especially if you are working with a large data set.  </p></br>
+
+	<p> 2:When looking at a chart that has millions of dollars in Revenue, depending on the chart you might want to have the following format as an option to display the axis number in Millions to two decimal places rather than looking at a large number.  &lt; $#.##,, “ M”; &gt;</p></br>
+
+	<p> 3:For Blue North data specifically the Analytics server has to be restarted if the cube source is giving errors due to memory pressure.  This will occur usually if excel or the pivot table queries are slow.</p></br>
+
+	<p> 4:For selecting a large number of values in a filter of a pivot table.  One might run a loop to populate the arrary in VBA and set it to the property pivotfieldlist.  The list of objects and their properties can be found here: <link>https://msdn.microsoft.com/en-us/library/office/ff822619.aspx</link> and they are fairly straight-forward to follow.  </p></br>
+
 </div>
 
 
